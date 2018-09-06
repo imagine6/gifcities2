@@ -15,4 +15,4 @@ services:
       - APP_NAME=My first App
       - FLASK_DEBUG=1
       - PYTHONUNBUFFERED=0
-      - APP_SETTINGS=project.server.config.DevelopmentConfig
+      - APP_SETTINGS=project.config.DevelopmentConfig

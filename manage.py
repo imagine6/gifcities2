@@ -7,7 +7,7 @@ import coverage
 
 from flask.cli import FlaskGroup
 
-from project.server import create_app
+from project import create_app
 import subprocess
 import sys
 
@@ -20,8 +20,8 @@ COV = coverage.coverage(
     include='project/*',
     omit=[
         'project/tests/*',
-        'project/server/config.py',
-        'project/server/*/__init__.py'
+        'project/config/config.py',
+        'project/*/__init__.py'
     ]
 )
 COV.start()
