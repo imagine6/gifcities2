@@ -1,12 +1,27 @@
-# Docker Setup
+# Coding Challenge - GIFCities
 
-Use this guide if you want to use Docker in your project.
 
-> Built with Docker v18.03.1-ce.
+<p>
+  <br>
+  <img width="600" src="https://cl.ly/72c755d3da1b/%255Bb6065d8232df0e6d2c0219b4284ecf3a%255D_Image%2525202018-09-06%252520at%25252011.22.36%252520PM.png" alt="logo of repository">
+  <br>
+  <br>
+</p>
+
+## Description
+Find the best GIFs on the web
+
+**Stay tuned**
+
+## Result
+
+![Demo](https://cl.ly/a755423b91ba/Screen%252520Recording%2525202018-09-06%252520at%25252011.43%252520PM.gif)
+
+
 
 ## Getting Started
 
-Update the environment variables in *docker-compose.yml*, and then build the images and spin up the containers:
+Build the image and spin up the containers:
 
 ```sh
 $ docker-compose up -d --build
