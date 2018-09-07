@@ -27,7 +27,7 @@ instance/
 .webassets-cache
 
 
-### VisualStudioCode ###
+### VisualStudioCode 
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
