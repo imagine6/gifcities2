@@ -34,3 +34,6 @@ instance/
 !.vscode/launch.json
 !.vscode/extensions.json
 .vscode/settings.json
+
+# Vagrant 
+.vagrant/
