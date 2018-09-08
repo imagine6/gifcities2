@@ -20,7 +20,7 @@ Vagrant.configure(2) do |config|
   # vagrant-docker-compose plugin first. It should also solve the
   # "The '' provisioner could not be found." error:
   # $ vagrant plugin install vagrant-docker-compose
-  config.vm.provision :docker_compose, rebuild: true, run: "always", yml: "/vagrant/docker-compose.yml"
+  config.vm.provision :docker_compose, rebuild: true, run: "always", yml: "/vagrant/docker-compose.yml", command_options: { up: ""}
 end 
 
 
