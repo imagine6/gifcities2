@@ -1,4 +1,4 @@
-version: '3.5'
+version: '3.0'
 
 services:
 
@@ -10,7 +10,7 @@ services:
     volumes:
       - '.:/usr/src/app'
     ports:
-      - 5002:5000
+      - 5000:5000
     environment:
       - APP_NAME=My first App
       - FLASK_DEBUG=1
