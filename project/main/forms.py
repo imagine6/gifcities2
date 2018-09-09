@@ -3,5 +3,5 @@ from wtforms import StringField
 from wtforms.validators import DataRequired
 
 
-class GIFform (FlaskForm):
+class SearchForm (FlaskForm):
     searchterm = StringField(validators=[DataRequired()])
