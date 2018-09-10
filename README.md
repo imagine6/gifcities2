@@ -11,8 +11,6 @@ Fortunately, most of the work had already been done and you only need to add som
 
 ## Step 1 - Setting up your Dev Environment
 
-Part of being a developers includes setting up your computer for Development. This can be tricky if you're new to this.
-
 To ease the process, the repo provides some files to help you get started. You will need to choose one of the approaches described below:
 
 The simplest way is to use a tool called Vagrant:
@@ -42,11 +40,8 @@ At this point, you should only pay attention to the following:
 
 1. You only need to edit the following three files: 
 
-     *  `views.py`
-
-     *  `results.html`
-
-     * `main.css`
+      * `views.py`, `results.html` and `main.css`
+```sh
     .
     ├── ...
     ├── project                   
@@ -59,7 +54,7 @@ At this point, you should only pay attention to the following:
     │   ├── static
              ├── main.css               # Global Style Sheet
     └── ...
-
+```
 2. Learn the basics of Flask and Requests. Both are easy to learn and these resources listed below are good resources and references for getting started: 
   * [Flask Megatutorial](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world) **Chaper 1-3 only**
   * [Routing with Flask](https://www.rithmschool.com/courses/flask-fundamentals/routing-with-flask)
@@ -69,8 +64,7 @@ At this point, you should only pay attention to the following:
    In `views.py` replace "Your API Key" with your actual API key in the code.
 
 ## The Challenge - Integrate Tenor's GIF Search API
-Now it's time to write some Python code! 
-Remember to write your Python code in `views.py` only
+In `views.py`, do the following:
 
 1. Import the `requests` module in views.py
 2. Within `query_api`: 
