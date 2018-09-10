@@ -3,7 +3,6 @@
 
 from flask import render_template, Blueprint, redirect, url_for, jsonify
 from .forms import SearchForm
-import requests
 import json
 
 main_blueprint = Blueprint('main', __name__,)
