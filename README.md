@@ -1,49 +1,99 @@
-# Coding Challenge - GIFCities
+# CodeDoor Coding Challenge - Full-Stack (Python, HTML/CSS)
 
 
-<p>
-  <br>
-  <img width="600" src="https://cl.ly/72c755d3da1b/%255Bb6065d8232df0e6d2c0219b4284ecf3a%255D_Image%2525202018-09-06%252520at%25252011.22.36%252520PM.png" alt="logo of repository">
-  <br>
-  <br>
-</p>
+## The Context
 
-## Description
-Find the best GIFs on the web
+You are to treat this challenge as if you are working as a full-stack web developer at a fictitious startup. A news site has revealed that a big tech company is copying some of GifCities core features. The CTO is under pressure to showcase a minimum viable product to their board of directors by the end of the week.
 
-**Stay tuned**
-
-## Result
-
-![Demo](https://cl.ly/a755423b91ba/Screen%252520Recording%2525202018-09-06%252520at%25252011.43%252520PM.gif)
+You are tasked to integrate the Tenor's API that will deliver GIF search results and show those results visually in a working Flask app. 
+Fortunately, most of the work had already been done and you only need to add some finishing touches.
 
 
+## Step 1 - Setting up your Dev Environment
 
-## Getting Started
+Part of being a developers includes setting up your computer for Development. This can be tricky if you're new to this.
 
-Build the image and spin up the containers:
+To ease the process, the repo provides some files to help you get started. You will need to choose one of the approaches described below:
 
-```sh
-$ docker-compose up -d --build
-```
-Access the application at the address [http://localhost:5002/](http://localhost:5002/)
+The simplest way is to use a tool called Vagrant:
 
-### Testing
+- Setup for a Vagrant-Based Environment
 
-Test without coverage:
+Alternatively you can use another tool called Docker: 
 
-```sh
-$ docker-compose run web python manage.py test
-```
+- Setup with Docker
 
-Test with coverage:
+If you don't use Vagrant/Docker, you need to perform many, many more steps. These steps depend on your operating system: 
 
-```sh
-$ docker-compose run web python manage.py cov
-```
+- [Install Python](https://docs.python-guide.org/starting/installation/)
 
-Lint:
+> Please note:  We use Python 3.6.5. and you can install all necessary dependencies from `requirements.txt` using pip.
 
-```sh
-$ docker-compose run web flake8 project
-```
+## Step 2 - Getting Familiar with project
+
+Now that you have your server running, you can familiarize yourself with the project.
+
+You're going to use:
+
+- [Flask](http://flask.pocoo.org/docs/1.0/) for our web framework
+- [Requests](http://docs.python-requests.org/en/master/) to grab data from the [Tenor's API](https://tenor.com/gifapi)
+
+At this point, you should only pay attention to the following:
+
+1. You only need to edit the following three files: 
+
+     *  `views.py`
+
+     *  `results.html`
+
+     * `main.css`
+    .
+    ├── ...
+    ├── project                   
+    │   ├── main              
+    │        |── views.py               # Main file for Coding Challenge
+    │   ├── templates            
+    │        ├── main
+    │              ├── results.html     # HTML Skeleton for Search results page 
+                   ├── index.html       # HTML Skeleton for Searchform page
+    │   ├── static
+             ├── main.css               # Global Style Sheet
+    └── ...
+
+2. Learn the basics of Flask and Requests. Both are easy to learn and these resources listed below are good resources and references for getting started: 
+  * [Flask Megatutorial](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world) **Chaper 1-3 only**
+  * [Routing with Flask](https://www.rithmschool.com/courses/flask-fundamentals/routing-with-flask)
+  * [Requests Quickstart](http://docs.python-requests.org/en/master/user/quickstart/)
+
+3. Before moving on, make sure to create a developer account and [request an API key](https://tenor.com/gifapi/documentation) from Tenor. 
+   In `views.py` replace "Your API Key" with your actual API key in the code.
+
+## The Challenge - Integrate Tenor's GIF Search API
+Now it's time to write some Python code! 
+Remember to write your Python code in `views.py` only
+
+1. Import the `requests` module in views.py
+2. Within `query_api`: 
+  * Make an API call to execute a GIF Search that matches the given search parameter
+  * If the requests succeeds, parse the JSON response to acquire the URL of each GIF
+
+3. Display search results in `results.html` (Hint: Jinja Templates) 
+
+These resources listed below might help for your challenge:
+* [Python API Tutorial](https://www.dataquest.io/blog/python-api-tutorial/)
+* [Tenor's GIF Search API Documentation](https://tenor.com/gifapi/documentation#quickstart-setup)
+* [How to use Web APIs in Python 3](https://www.digitalocean.com/community/tutorials/how-to-use-web-apis-in-python-3)
+* [Templating with Jinja][https://www.rithmschool.com/courses/flask-fundamentals/templating-with-jinja2]
+
+
+## What do we except
+The result should look like this:
+
+* Commit **early** and **often**. We want to be able to check your progress
+* Once you're satified with your solution, create a Pull Request in your repo.
+ 
+
+Too hard? Got stuck? Reach out to the CodeDoor Slack Community. Tutors are ready to answer your questions in  #full-stack.
+Too easy? Go the extra mile and add additional search functionalities or improve the styling.
+
+**Good Luck and Happy Coding!**
