@@ -60,7 +60,7 @@ At this point, you should only pay attention to the following:
   * [Routing with Flask](https://www.rithmschool.com/courses/flask-fundamentals/routing-with-flask)
   * [Requests Quickstart](http://docs.python-requests.org/en/master/user/quickstart/)
 
-3. Before moving on, make sure to create a developer account and [request an API key](https://tenor.com/gifapi/documentation) from Tenor. 
+3. Before moving on, make sure to create a developer account and [request an API key](https://tenor.com/gifapi/documentation). 
    In `views.py` replace "Your API Key" with your actual API key in the code.
 
 ## The Challenge - Integrate Tenor's GIF Search API
@@ -77,7 +77,7 @@ These resources listed below might help for your challenge:
 * [Python API Tutorial](https://www.dataquest.io/blog/python-api-tutorial/)
 * [Tenor's GIF Search API Documentation](https://tenor.com/gifapi/documentation#quickstart-setup)
 * [How to use Web APIs in Python 3](https://www.digitalocean.com/community/tutorials/how-to-use-web-apis-in-python-3)
-* [Templating with Jinja][https://www.rithmschool.com/courses/flask-fundamentals/templating-with-jinja2]
+* [Templating with Jinja](https://www.rithmschool.com/courses/flask-fundamentals/templating-with-jinja2)
 
 
 ## What do we except
@@ -89,7 +89,7 @@ These resources listed below might help for your challenge:
     
  
 
-Too hard? Got stuck? Reach out to the CodeDoor Slack Community. Tutors are ready to answer your questions in  #full-stack.
+Too hard? Got stuck? We encourage to reach out to Tutors and the CodeDoor Slack Community.
 Too easy? Go the extra mile and add additional search functionalities or improve the styling.
 
 **Good Luck and Happy Coding!**
