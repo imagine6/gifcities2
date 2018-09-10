@@ -1,4 +1,4 @@
-# CodeDoor Coding Challenge - Full-Stack (Python, HTML/CSS)
+# CodeDoor Coding Challenge - GifCities
 
 
 ## The Context
