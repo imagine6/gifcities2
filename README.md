@@ -1,6 +1,6 @@
 # CodeDoor Coding Challenge - GifCities
 
-
+![Hero](/static/header.png)
 ## The Context
 
 You are to treat this challenge as if you are working as a full-stack web developer at a fictitious startup. A news site has revealed that a big tech company is copying some of GifCities core features. The CTO is under pressure to showcase a minimum viable product to their board of directors by the end of the week.
@@ -81,10 +81,12 @@ These resources listed below might help for your challenge:
 
 
 ## What do we except
-The result should look like this:
 
 * Commit **early** and **often**. We want to be able to check your progress
 * Once you're satified with your solution, create a Pull Request in your repo.
+* Your solution should work like this:
+![Result](/static/results_example.gif)
+    
  
 
 Too hard? Got stuck? Reach out to the CodeDoor Slack Community. Tutors are ready to answer your questions in  #full-stack.
