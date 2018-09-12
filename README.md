@@ -15,11 +15,11 @@ To ease the process, the repo provides some files to help you get started. You w
 
 The simplest way is to use a tool called Vagrant:
 
-- Setup for a Vagrant-Based Environment
+- [Setup for a Vagrant-Based Environment](/static/doc/setup-for-vagrant.md)
 
 Alternatively you can use another tool called Docker: 
 
-- Setup with Docker
+- [Setup with Docker](/static/doc/setup-for-docker.md)
 
 If you don't use Vagrant/Docker, you need to perform many, many more steps. These steps depend on your operating system: 
 
