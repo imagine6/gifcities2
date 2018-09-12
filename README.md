@@ -5,7 +5,7 @@
 
 You are to treat this challenge as if you are working as a full-stack web developer at a fictitious startup. A news site has revealed that a big tech company is copying some of GifCities core features. The CTO is under pressure to showcase a minimum viable product to their board of directors by the end of the week.
 
-You are tasked to integrate the Tenor's API that will deliver GIF search results and show those results visually in a working Flask app. 
+You are tasked to integrate a Web API that will deliver GIF search results and display these search results using Flask. 
 Fortunately, most of the work had already been done and you only need to add some finishing touches.
 
 
@@ -34,7 +34,7 @@ Now that you have your server running, you can familiarize yourself with the pro
 You're going to use:
 
 - [Flask](http://flask.pocoo.org/docs/1.0/) for our web framework
-- [Requests](http://docs.python-requests.org/en/master/) to grab data from the [Tenor's API](https://tenor.com/gifapi)
+- [Requests](http://docs.python-requests.org/en/master/) to grab data from [Tenor's GIF API](https://tenor.com/gifapi)
 
 At this point, you should only pay attention to the following:
 
@@ -66,12 +66,12 @@ At this point, you should only pay attention to the following:
 ## The Challenge - Integrate Tenor's GIF Search API
 In `views.py`, do the following:
 
-1. Import the `requests` module in views.py
+1. Import `requests` module in views.py
 2. Within `query_api`: 
   * Make an API call to execute a GIF Search that matches the given search parameter
   * If the requests succeeds, parse the JSON response to acquire the URL of each GIF
 
-3. Display search results in `results.html` (Hint: Jinja Templates) 
+3. Render search results in `results.html` (Hint: Jinja Templates) 
 
 These resources listed below might help for your challenge:
 * [Python API Tutorial](https://www.dataquest.io/blog/python-api-tutorial/)
@@ -88,8 +88,7 @@ These resources listed below might help for your challenge:
 ![Result](/static/results_example.gif)
     
  
-
-Too hard? Got stuck? We encourage to reach out to Tutors and the CodeDoor Slack Community.
+Too hard? Got stuck? We encourage to reach out to Tutors and the CodeDoor Slack Community.  
 Too easy? Go the extra mile and add additional search functionalities or improve the styling.
 
 **Good Luck and Happy Coding!**
