@@ -1,18 +1,17 @@
 ## Setup with Docker
-
-We will use Docker to run your project for the Coding Challenge., 
+We will use Docker to run your project for the Coding Challenge.
 1. [Install Docker and Docker Compose](https://www.docker.com/products/docker-desktop)
 
 ### Clone the Git repository
 First you will need to clone the Git repository
 
 ### Run Project in Docker Container
-Now, navigate to the folder with your files. 
-You need to run your project:
+Now, navigate to the folder with your files.   
+You need to run the application:
 ```bash
 docker-compose up
 ```
-This will build the Docker Images and then start the service.  
+This will build a Docker Image and then start the service.  
 
 Open your web browser and navigate to `http://localhost:5000` to see the project.
 
