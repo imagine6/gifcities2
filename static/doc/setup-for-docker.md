@@ -1,23 +1,27 @@
-# Setup for a Vagrant-Based Environment
-Docker Containerization Unlocks the Potential for Dev and Ops
+## Setup with Docker
 
-## Installation Steps 
+We will use Docker to run your project for the Coding Challenge., 
+1. [Install Docker and Docker Compose](https://www.docker.com/products/docker-desktop)
 
-### Step 1 - Install Docker
+### Clone the Git repository
+First you will need to clone the Git repository
 
-Download and install [Docker](https://www.docker.com/get-started "Docker")
+### Run Project in Docker Container
+Now, navigate to the folder with your files. 
+You need to run your project:
+```bash
+docker-compose up
+```
+This will build the Docker Images and then start the service.  
 
-### Step 2 - Docker Installation
-After installation run `$ docker -v` to make sure its installed
+Open your web browser and navigate to `http://localhost:5000` to see the project.
 
-### Step 3 - Docker Installation
-Clone this repo to a preferied folder
-
-### Step 4 - Start the envirment
-in a terminal with the same folder run `docker run Dockerfile`
+### Additional Resources
+[Docker in Action – Fitter, Happier, More Productive](https://realpython.com/docker-in-action-fitter-happier-more-productive/)  
+[Why you should stop installing your WebDev Environment locally](https://www.smashingmagazine.com/2016/04/stop-installing-your-webdev-environment-locally-with-docker/)
 
 
-### More information at :
 
-for more instructions please visit this site [Docker](https://docs.docker.com/get-started/ "Docker")
+
+
 
