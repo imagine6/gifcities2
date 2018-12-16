@@ -19,9 +19,10 @@ def search():
 
 @main_blueprint.route("/results")
 def search_results(search_query):
-    search_results = query_API(search_query)
-    return render_template('main/results.html', results=search_results, query=search_query)
+    return render_template('main/results.html', results=None,
+                           query=search_query)
+
 
 def query_API(searchterm):
-    tenor_apikey = "YOUR API KEY"
-    return None
+    tenor_apikey = None
+    return tenor_apikey
