@@ -73,8 +73,11 @@ In `views.py`, do the following:
 
 3. Render search results in `results.html` (Hint: Jinja Templates) 
 
+4. Search Results need to be shown in a grid-based layout (Hint: Use Bootstrap) 
+
 These resources listed below might help for your challenge:
 * [Python API Tutorial](https://www.dataquest.io/blog/python-api-tutorial/)
+* [What is REST?](https://www.codecademy.com/articles/what-is-rest)
 * [Tenor's GIF Search API Documentation](https://tenor.com/gifapi/documentation#quickstart-setup)
 * [How to use Web APIs in Python 3](https://www.digitalocean.com/community/tutorials/how-to-use-web-apis-in-python-3)
 * [Templating with Jinja](https://www.rithmschool.com/courses/flask-fundamentals/templating-with-jinja2)
@@ -82,7 +85,8 @@ These resources listed below might help for your challenge:
 
 ## What do we except
 
-* Commit **early** and **often**. We want to be able to check your progress
+* Commit **early** and **often**. We want to be able to check your progress.
+* Your Python code is neatly formatted and follows the [PEP 8 Styleguide](https://www.python.org/dev/peps/pep-0008/)
 * Once you're satified with your solution, create a Pull Request in your repo.
 * Your solution should work like this:
 ![Result](/static/results_example.gif)
