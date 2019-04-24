@@ -8,9 +8,7 @@ unless Vagrant.has_plugin?("vagrant-docker-compose")
 end
 
 Vagrant.configure(2) do |config|
-  config.vm.box = "ubuntu/trusty64"
-  config.vm.box_version="20180509.0.0"
-
+  config.vm.box = "bento/ubuntu-16.04"
   config.vm.network "forwarded_port", guest: 5000, host: 5000
 
   # If errors occur, try running "vagrant provision" manually
